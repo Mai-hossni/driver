@@ -73,7 +73,7 @@ packages:
     source: sdk
     version: "0.0.0"
   http:
-    dependency: transitive
+    dependency: "direct main"
     description:
       name: http
       url: "https://pub.dartlang.org"
@@ -203,13 +203,6 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "2.1.2"
-  weather:
-    dependency: "direct main"
-    description:
-      name: weather
-      url: "https://pub.dartlang.org"
-    source: hosted
-    version: "2.0.1"
 sdks:
   dart: ">=2.17.6 <3.0.0"
   flutter: ">=3.0.0"

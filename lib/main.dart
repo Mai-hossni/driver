@@ -2,23 +2,20 @@ import 'package:flutter/material.dart';
 import 'package:flutter_application_1/busseats.dart';
 import 'package:flutter_application_1/entrip.dart';
 import 'package:flutter_application_1/final.dart';
-import 'package:flutter_application_1/logout.dart';
+import 'package:flutter_application_1/login.dart';
+import 'package:flutter_application_1/screens/logout.dart';
 import 'package:flutter_application_1/pay_mthd.dart';
 import 'package:flutter_application_1/soso.dart';
 import 'package:flutter_application_1/splash.dart';
 import 'package:flutter_application_1/station.dart';
 import 'package:flutter_application_1/test.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
-import 'package:weather/weather.dart';
-import 'dart:html';
 import 'package:http/http.dart' as http;
 
 void main() {
   runApp(const MyApp());
 }
 
-WeatherFactory wf =
-    new WeatherFactory("YOUR_API_KEY", language: Language.ARABIC);
 
 class MyApp extends StatelessWidget {
   const MyApp({Key? key}) : super(key: key);
@@ -49,7 +46,7 @@ class MyApp extends StatelessWidget {
         // is not restarted.
         primarySwatch: Colors.blue,
       ),
-      home: spl_sc(),
+      home: login(),
     );
   }
 }

@@ -4,7 +4,7 @@ import 'dart:ui';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 import 'package:flutter_application_1/from_to.dart';
-import 'package:flutter_application_1/logout.dart';
+import 'package:flutter_application_1/screens/logout.dart';
 import 'package:flutter_application_1/station.dart';
 
 class login extends StatefulWidget {

@@ -1,4 +1,3 @@
-import 'dart:html';
 import 'package:flutter_application_1/entrip.dart';
 import 'package:http/http.dart' as http;
 import 'dart:convert';
