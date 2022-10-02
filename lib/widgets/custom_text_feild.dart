@@ -5,9 +5,11 @@ class CustomTextFeild extends StatelessWidget {
     Key? key,
     required this.controller,
     required this.hintText,
+    //  this.fun,
   }) : super(key: key);
   final TextEditingController controller;
   final String hintText;
+  // final Function? fun;
   @override
   Widget build(BuildContext context) {
     return Padding(

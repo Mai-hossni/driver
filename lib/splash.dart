@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_application_1/login.dart';
-import 'package:splashscreen/splashscreen.dart';
 
 class spl_sc extends StatefulWidget {
   spl_sc({Key? key}) : super(key: key);
@@ -10,16 +9,33 @@ class spl_sc extends StatefulWidget {
 }
 
 class _spl_scState extends State<spl_sc> {
+  // @override
+  // void initState() async {
+  //   // TODO: implement initState
+  //   super.initState();
+  //   navigate();
+  // }
+
+  // void navigate() async {
+  //   await Future.delayed(const Duration(milliseconds: 1500), () {});
+    
+  //   // ignore: use_build_context_synchronously
+  //   Navigator.pushReplacement(context, MaterialPageRoute(builder: (context) => login()));
+  // }
+
   @override
   Widget build(BuildContext context) {
-    return SplashScreen(
-      seconds: 6,
-      navigateAfterSeconds: login(),
-      loadingText: Text("Loading......."),
-      image: Image.asset(
-        "bus_splash.jpg",
-      ),
-      photoSize: 200,
+    return Stack(
+      children: [
+        Container(
+          child: Image.asset(
+            "assets/bus_splash.jpg",
+            height: MediaQuery.of(context).size.height,
+            width: MediaQuery.of(context).size.width,
+            fit: BoxFit.fill,
+          ),
+        ),
+      ],
     );
   }
 }
